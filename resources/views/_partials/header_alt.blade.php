@@ -45,7 +45,7 @@
 			<!-- NAVBAR HEADER -->
 			<div class="navbar-header">
 				<!-- LOGO -->
-				<a class="navbar-brand" href="/"><img class="img-responsive" alt="logo" src="{{ asset('images/logo.png') }}"></a> 
+				<a class="navbar-brand" style="height: 65px;" href="/"><img class="img-responsive" alt="logo" src="{{ asset('images/logo.jpg') }}" style="width: 70px"></a> 
 			</div>
 			<!-- NAVBAR COLLAPSE -->
 			<div class="logobar-content">

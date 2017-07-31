@@ -78,7 +78,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 footer-logo">
-					<img alt="footer-logo" src="{{ asset('images/footer-logo.png') }}">
+					<img alt="footer-logo" src="{{ asset('images/logo.jpg') }}" style="width: 60px">
 				</div>
 				<div class="col-md-6 footer-info">
 					<p>© 2017 {{ config('app.name', 'Laravel') }}. Все права защищены.<br>Разработано <a href="http://hawkart.ru">Hawkart</a>.</p>
