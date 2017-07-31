@@ -11,14 +11,19 @@
 |
 */
 
+Route::get('/', 'HomeController@index')->name('home');
+
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/register/verify/{token}', 'Auth\RegisterController@verify'); 
+
+Route::get('/videos', 'VideoController@index')->name('videos');
+Route::get('/videos/{slug}', 'VideoController@show')->name('video');
+
+Route::get('/study/books', 'BookController@index')->name('books');
+Route::get('/study/books/{slug}', 'BookController@show')->name('book');
+Route::get('/{param}', 'PageController@show')->name('page');
