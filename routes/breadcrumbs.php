@@ -33,3 +33,17 @@ Breadcrumbs::register('videos', function($breadcrumbs)
     $breadcrumbs->parent('home');
     $breadcrumbs->push("Видео по Форекс", route('videos'));
 });
+
+// Home > articles
+Breadcrumbs::register('articles', function($breadcrumbs)
+{
+    $breadcrumbs->parent('home');
+    $breadcrumbs->push("Статьи", route('articles'));
+});
+
+// Home > articles > article
+Breadcrumbs::register('article', function($breadcrumbs, $article)
+{
+    $breadcrumbs->parent('articles');
+    $breadcrumbs->push($article->title, route('article', $article->slug));
+});

@@ -91,11 +91,10 @@ class RegisterController extends Controller
         try
         {
             $user = $this->create($request->all());
-            // After creating the user send an email with the random token generated in the create method above
             $email = new EmailVerification(new User(['email_token' => $user->email_token, 'name' => $user->name]));
             Mail::to($user->email)->send($email);
             DB::commit();
-            return back();
+            return back()->with('status', "На вашу почту отправлена ссылка для подтверждения!");
         }
         catch(Exception $e)
         {
@@ -107,6 +106,6 @@ class RegisterController extends Controller
     public function verify($token)
     {
         User::where('email_token', $token)->firstOrFail()->verified();
-        return redirect('login');
+        return redirect('login')->with('status', "Ваша почта подтверждена!");
     }
 }

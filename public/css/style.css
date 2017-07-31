@@ -294,7 +294,7 @@ form .row:lastchild {
 }
 .breadcrumb > li {
     font-size: 14px;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 .breadcrumb > li + li::before {
     color: #909090;
@@ -2174,4 +2174,7 @@ img.img-responsive{
 }
 .grid-details p{
     text-align: justify;
+}
+.media-object-250{
+    width: 250px !important;
 }
