@@ -7,8 +7,8 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-                {!! Breadcrumbs::render('article', $article) !!}
-				<h1 class="page-title bottom-line">{{ $article->title }}</h1>
+                {!! Breadcrumbs::render('forecast', $forecast) !!}
+				<h1 class="page-title bottom-line">{{ $forecast->title }}</h1>
 			</div>
 		</div>
 	</div>	<!-- /.CONTAINER -->	
@@ -18,7 +18,7 @@
 	<div class="container">
         <div class="row">
 			<div class="col-md-12">
-                {!! $article->description !!}
+                {!! $forecast->idea !!}
                 
                 <script type="text/javascript">(function() {
                 if (window.pluso)if (typeof window.pluso.start == "function") return;
@@ -51,9 +51,9 @@
                 })();
                 </script>
                 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-            
-            </div>	
-		</div>		
+            </div>
+        </div>
+        	
 	</div>
 </div>
 

@@ -6,10 +6,10 @@
 					<div class="widget">
 						<h4 class="widget-title">О нас</h4>
 						<ul class="widget-menu">
-							<li><a href="#">О школе</a></li>
-                            <li><a href="#">Преподаватели</a></li>
-                            <li><a href="#">Партнеры</a></li>
-							<li><a href="#">Отзывы</a></li>
+							<li><a href="{{route('about')}}">О школе</a></li>
+                            <li><a href="{{route('teachers')}}">Преподаватели</a></li>
+                            <?/*<li><a href="#">Партнеры</a></li>
+							<li><a href="#">Отзывы</a></li>*/?>
 						</ul>
 					</div>
 				</div>
@@ -20,9 +20,9 @@
 							<li><a href="#">Стратегии</a></li>
 							<li><a href="#">Вебинары</a></li>
 							<li><a href="#">Индивидуальное обучение</a></li>
-							<li><a href="#">Книги</a></li>
-                            <li><a href="#">Видео</a></li>
-                            <li><a href="#">Статьи</a></li>
+							<li><a href="{{route('books')}}">Книги</a></li>
+                            <li><a href="{{route('videos')}}">Видео</a></li>
+                            <li><a href="{{route('articles')}}">Статьи</a></li>
                             <li><a href="#">Торговые роботы</a></li>
 						</ul>
 					</div>
@@ -77,11 +77,15 @@
 	<div class="footer-bottom-area">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6 footer-logo">
-					<img alt="footer-logo" src="{{ asset('images/logo.jpg') }}" style="width: 60px">
+				<div class="col-md-4 footer-logo">
+					<img alt="footer-logo" src="{{ asset('images/logo-f.png') }}" style="width: 200px">
 				</div>
-				<div class="col-md-6 footer-info">
-					<p>© 2017 {{ config('app.name', 'Laravel') }}. Все права защищены.<br>Разработано <a href="http://hawkart.ru">Hawkart</a>.</p>
+                
+                <div class="col-md-4">
+                    <p>BvsBForex не является брокерской компанией и не ведет брокерскую деятельность.</p>
+                </div>
+				<div class="col-md-4 footer-info">
+					<p>© 2017 {{ config('app.name', 'Laravel') }}. Все права защищены.<br>Разработано <a href="http://hawkart.ru" class="typo-white">Hawkart</a>.</p>
 				</div>
 			</div>
 		</div>		

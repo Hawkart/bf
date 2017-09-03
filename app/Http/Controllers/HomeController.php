@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Article;
+use App\Models\Forecast;
 
 class HomeController extends Controller
 {
@@ -23,6 +25,14 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $articles = Article::orderBy('id', 'desc')->limit(3)->get();
+        $forecasts = Forecast::orderBy('id', 'desc')->limit(3)->get();
+        
+        $calendar = \App\Acme\Helpers\RoboforexHandler::getCalendar();
+        return view('home', [
+            'forecasts' => $forecasts,
+            'articles' => $articles,
+            'calendar' => $calendar
+        ]);
     }
 }

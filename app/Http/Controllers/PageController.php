@@ -45,4 +45,47 @@ class PageController extends Controller
 
         return view ('pages.show')->with('page', $page);
     }
+    
+    /**
+     * Show the contact page.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function contacts()
+    {
+        return view('contacts');
+    }
+    
+    /**
+     * Send info from contact form
+     */
+    public function postContacts(Request $request)
+    {
+        
+    }
+    
+    /**
+     * Show the contact page.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function about()
+    {
+        return view('about');
+    }
+    
+    /**
+     * Show the contact page.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function teachers()
+    {
+        return view('teachers');
+    }
+    public function calendar()
+    {
+        $calendar = \App\Acme\Helpers\RoboforexHandler::getCalendar();
+        return view('calendar')->with('calendar', $calendar);
+    }
 }

@@ -11,7 +11,15 @@
 |
 */
 
+Route::get('/rss', '\App\Acme\Helpers\RoboforexHandler@rssParse');
+
+Route::get('/calendar', 'PageController@calendar')->name('calendar');
+
 Route::get('/', 'HomeController@index')->name('home');
+Route::get('/contacts', 'PageController@contacts')->name('contacts');
+Route::post('/contacts', 'PageController@postContacts')->name('contact_form');
+Route::get('/about', 'PageController@about')->name('about');
+Route::get('/about/teachers', 'PageController@teachers')->name('teachers');
 
 /**
  * Admin
@@ -43,6 +51,20 @@ Route::get('/videos/{slug}', 'VideoController@show')->name('video');
  */
 Route::get('/study/books', 'BookController@index')->name('books');
 Route::get('/study/books/{slug}', 'BookController@show')->name('book');
+
+
+/**
+ * Forecasts
+ */
+Route::get('/forecasts', 'ForecastController@index')->name('forecasts');
+Route::get('/forecasts/{slug}', 'ForecastController@show')->name('forecast');
+
+/**
+ * Strategies
+ */
+Route::get('/study/strategies', 'StrategyController@index')->name('strategies');
+Route::get('/study/strategies/{slug}', 'StrategyController@show')->name('strategy');
+
 
 /**
  * Pages

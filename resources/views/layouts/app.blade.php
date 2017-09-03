@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="yandex-verification" content="7d19099c5829b30b" />
     {!! SEO::generate(true) !!}
     
     <link rel="shortcut icon" href="{{ asset('images/favicon.ico') }}">
@@ -33,6 +34,39 @@
             'csrfToken' => csrf_token(),
         ]) !!};
     </script>
+    
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter45621201 = new Ya.Metrika({
+                        id:45621201,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true,
+                        webvisor:true
+                    });
+                } catch(e) { }
+            });
+    
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+    
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/45621201" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    
+    <!--Vk messanger-->
+    <script src="https://vk.com/js/api/openapi.js?146" type="text/javascript"></script> 
 </head>
 <body>
 	<?/*<div id="pageloader">
@@ -48,6 +82,12 @@
         @include('_partials.footer')
         	
 	</div>
+    
+    <!-- VK Widget -->
+    <div id="vk_community_messages"></div>
+    <script type="text/javascript">
+    VK.Widgets.CommunityMessages("vk_community_messages", 147039066, {tooltipButtonText: "Есть вопрос?"});
+    </script>
 
     <script type="text/javascript" src="{{ asset('js/jquery.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
@@ -57,6 +97,7 @@
     <script type="text/javascript" src="{{ asset('js/theme.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/owl.carousel.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/bootstrap.youtubepopup.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/jquery.tablescroll.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/custom.js') }}"></script>
 </body>
 </html>

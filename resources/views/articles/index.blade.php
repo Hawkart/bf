@@ -33,7 +33,7 @@
 						</div>
                         
                         <div class="media-body">
-							<p class="post-date">{{ $article->created_at->diffForHumans() }}</p>
+							<p class="post-date"><span class="news__time">{{ \Carbon\Carbon::parse($article->created_at)->format('H:i')}}</span> / {{ \Carbon\Carbon::parse($article->created_at)->format('d.m.Y')}}</p>
 							<h4 class="post-title"><a href="{!! route('article', ['slug' => $article->slug]) !!}">{{$article->title}}</a></h4>
 							<p class="post-desc">{{$article->preview_text}}</p>
 						</div>

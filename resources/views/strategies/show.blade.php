@@ -7,8 +7,8 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-                {!! Breadcrumbs::render('article', $article) !!}
-				<h1 class="page-title bottom-line">{{ $article->title }}</h1>
+                {!! Breadcrumbs::render('strategy', $strategy) !!}
+				<h1 class="page-title bottom-line">{{ $strategy->title }}</h1>
 			</div>
 		</div>
 	</div>	<!-- /.CONTAINER -->	
@@ -18,8 +18,34 @@
 	<div class="container">
         <div class="row">
 			<div class="col-md-12">
-                {!! $article->description !!}
                 
+                {!! $strategy->detail_text !!}
+                <p><br />
+                @if(!empty($strategy->timeframe))
+                <b class="typo-black">Таймфрейм:</b> {!! $strategy->timeframe !!}<br />
+                @endif
+                @if(!empty($strategy->symbols))
+                <b class="typo-black">Торговые инструменты:</b> {!! $strategy->symbols !!}<br />
+                @endif
+                @if(!empty($strategy->symbols))
+                <b class="typo-black">Индикаторы:</b><br /> {!! $strategy->indicators !!}<br />
+                @endif
+                </p>
+                
+                @if(!empty($strategy->open_long))
+                <b class="typo-black">Условия для открытия длинных позиций:</b> {!! $strategy->open_long !!}
+                @endif
+                @if(!empty($strategy->open_short))
+                <b class="typo-black">Условия для открытия коротких позиций:</b> {!! $strategy->open_short !!}
+                @endif
+                @if(!empty($strategy->tp))
+                <b class="typo-black">Условия выхода из позиции:</b> {!! $strategy->tp !!}
+                @endif
+                @if(!empty($strategy->sl))
+                <b class="typo-black">Уровень стоп-лосса:</b> {!! $strategy->sl !!}
+                @endif
+                
+
                 <script type="text/javascript">(function() {
                 if (window.pluso)if (typeof window.pluso.start == "function") return;
                 if (window.ifpluso==undefined) { window.ifpluso = 1;

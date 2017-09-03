@@ -11,10 +11,10 @@
 			 </div>
 			<!-- COLLAPSE -->
 			<div class="collapse navbar-collapse" id="top-menu">
-				<?/*<ul class="menu-inline navbar-left">
+				<ul class="menu-inline navbar-left">
 					<li><a href="#"><i class="fa fa-credit-card" aria-hidden="true"></i> Способы оплаты</a></li>
                     <li><a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i> Помощь</a></li>
-				</ul>*/?>
+				</ul>
 				<ul class="menu-inline navbar-right">
 					<?/*<li class="contact-info">Контатный тел.: <a class="text-color" href="tel:{{Voyager::setting('phone')}}">{{Voyager::setting('phone')}}</a></li>*/?>
                     @if (Auth::check())
@@ -50,15 +50,15 @@
 			<!-- NAVBAR COLLAPSE -->
 			<div class="logobar-content">
 				<ul class="nav navbar-nav menu-inline navbar-right">
-                    
-                    <li>
+					<li>
 						<div class="icon-box">
 							<div class="icon-wrapper">
 								<!-- ICON -->
-								<i class="ion-ios-analytics-outline icon-bordered"></i>
+								<i class="ion-ios-location-outline icon-bordered"></i>
 							</div>
 							<div class="inner-wrapper">
-								<p class="typo-black"><a href="{{ url('/forecasts') }}">Аналитика и прогнозы</a></p>
+								<p class="typo-black">344069, г. Ростов-на-Дону</p>
+								<p>такой-то физический адрес</p>
 							</div>
 						</div>	
 					</li>
@@ -66,10 +66,11 @@
 						<div class="icon-box">
 							<div class="icon-wrapper">
 								<!-- ICON -->
-								<i class="ion-ios-help-outline icon-bordered"></i>
+								<i class="ion-ios-clock-outline icon-bordered"></i>
 							</div>
 							<div class="inner-wrapper">
-								<p class="typo-black"><a href="{{ url('/faq') }}">Помощь</a></p>
+								<p class="typo-black">9.00 - 19.00</p>
+								<p>С Пн. по Пт.</p>
 							</div>
 						</div>	
 					</li>

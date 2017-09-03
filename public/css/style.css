@@ -460,7 +460,7 @@ form .row:lastchild {
 						SECTION
 ======================================================================*/
 .page-content {
-	padding-bottom:120px;
+	padding-bottom:40px;
 }
 section,.section,.page-title-wrapper {
 	/*padding:120px 0;*/
@@ -2172,9 +2172,1366 @@ img.img-responsive{
 .mb-20{
     margin-bottom: 20px !important;
 }
+.mt-20{
+    margin-top: 20px !important;
+}
 .grid-details p{
     text-align: justify;
 }
 .media-object-250{
     width: 250px !important;
+}
+.mb-40{
+    margin-bottom: 40px !important;
+}
+.news__time {
+    font-family: Verdana,Geneva,sans-serif;
+    color: #292f33;
+    box-sizing: border-box
+}
+.news__date {
+    font-size: 1.1rem;
+    line-height: 2.27272727;
+    font-weight: bold;
+    font-family: Verdana,Geneva,sans-serif;
+    box-sizing: border-box;
+}
+.news__title {
+    margin-top: .3rem;
+    margin-bottom: 0;
+    font-size: 2rem;
+    line-height: 1.5;
+    font-family: GloberBold,"Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
+    box-sizing: border-box;
+}
+.news__announce {
+    display: block;
+    width: 100%;
+    font-size: 1.4rem;
+    line-height: 1.78571429;
+    box-sizing: border-box;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+.news__item {
+    margin-bottom: 2.5rem;
+    box-sizing: border-box;
+}
+.forecast__list .news__item {
+    position: relative;
+    padding-bottom: 2.5rem;
+    padding-left: 3rem;
+    margin-bottom: 0;
+}
+.forecast__list .news__item:first-child::before {
+    top: .75rem;
+}   
+.forecast__list .news__item::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    display: block;
+    border-left: 2px dashed #acb9bf;
+}
+.forecast__list .news__item::after {
+    position: absolute;
+    top: .55rem;
+    left: -0.67rem;
+    content: '';
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    border: .2rem solid #acb9bf;
+}
+.forecast__list .news__item:last-child::before {
+    bottom: 3.25rem;
+}
+.news__list {
+    box-sizing: border-box;
+}
+.section-bordered{
+    border-top: 1px solid #e6e9eb;
+    border-bottom: 1px solid #e6e9eb;
+}
+.pb-30{
+    padding-bottom: 30px !important;
+}
+.padding-top-none{
+    padding-top: 0;
+}
+.contact-wrapper {
+    padding: 25px 0px 25px;
+}
+
+
+/**Calendar*/
+.table.events {
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+.table.events th:last-child {
+    padding-left: 0
+}
+
+.table.events td {
+    font-size: 1.2rem;
+    line-height: 1.66666667;
+    color: #3d454d;
+    box-sizing: border-box
+}
+
+.table.events td.e-name {
+    width: auto;
+    min-width: 4rem
+}
+
+.table.events td:last-child:not(:first-child) {
+    padding-left: 0;
+    padding-right: 0;
+    width: 1.5rem
+}
+
+.table.events .event-name {
+    display: inline-block;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto
+}
+
+.table.events .event-item a {
+    border-bottom: 1px dashed #1883cf;
+    text-decoration: none
+}
+
+.table.events .event-item a:hover {
+    border-bottom: 0
+}
+
+.table.events .fa-chevron-up {
+    display: inline-block;
+    font-size: .8rem
+}
+
+.table.events .fa-chevron-down {
+    display: none;
+    font-size: .8rem
+}
+
+.table.events .desc-hidden .fa-chevron-up {
+    display: none
+}
+
+.table.events .desc-hidden .fa-chevron-down {
+    display: inline-block
+}
+
+.table.events .events-dateline {
+    padding-top: .9rem;
+    padding-bottom: 1rem;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 1.4rem;
+    color: #17191a;
+    box-sizing: border-box
+}
+
+.events__loading {
+    height: 51.5rem;
+    line-height: 51.5rem;
+    vertical-align: middle;
+    text-align: center
+}
+
+div.events-dateline {
+    min-height: 7rem;
+    margin-top: 2.4rem;
+    padding-top: 2.4rem;
+    padding-bottom: 2rem;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 1.4rem;
+    color: #17191a;
+    border-top: 1px solid #e4e8eb;
+    box-sizing: border-box
+}
+
+.event-currency-flag {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1rem;
+    width: 2em;
+    height: 1.4em;
+    margin-right: .5rem;
+    outline: .5px solid #e6e9eb;
+    background-image: url('/images/countries.png');
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+.event-currency-flag_ad {
+    background-position: 0 0
+}
+
+.event-currency-flag_ae {
+    background-position: 0 -1.5em
+}
+
+.event-currency-flag_af {
+    background-position: 0 -3em
+}
+
+.event-currency-flag_ag {
+    background-position: 0 -4.5em
+}
+
+.event-currency-flag_ai {
+    background-position: 0 -6em
+}
+
+.event-currency-flag_al {
+    background-position: 0 -7.5em
+}
+
+.event-currency-flag_am {
+    background-position: 0 -9em
+}
+
+.event-currency-flag_ao {
+    background-position: 0 -10.5em
+}
+
+.event-currency-flag_aq {
+    background-position: 0 -12em
+}
+
+.event-currency-flag_ar {
+    background-position: 0 -13.5em
+}
+
+.event-currency-flag_as {
+    background-position: 0 -15em
+}
+
+.event-currency-flag_at {
+    background-position: 0 -16.5em
+}
+
+.event-currency-flag_au {
+    background-position: 0 -18em
+}
+
+.event-currency-flag_aw {
+    background-position: 0 -19.5em
+}
+
+.event-currency-flag_ax {
+    background-position: 0 -21em
+}
+
+.event-currency-flag_az {
+    background-position: 0 -22.5em
+}
+
+.event-currency-flag_ba {
+    background-position: 0 -24em
+}
+
+.event-currency-flag_bb {
+    background-position: 0 -25.5em
+}
+
+.event-currency-flag_bd {
+    background-position: 0 -27em
+}
+
+.event-currency-flag_be {
+    background-position: 0 -28.5em
+}
+
+.event-currency-flag_bf {
+    background-position: 0 -30em
+}
+
+.event-currency-flag_bg {
+    background-position: 0 -31.5em
+}
+
+.event-currency-flag_bh {
+    background-position: 0 -33em
+}
+
+.event-currency-flag_bi {
+    background-position: 0 -34.5em
+}
+
+.event-currency-flag_bj {
+    background-position: 0 -36em
+}
+
+.event-currency-flag_bl {
+    background-position: 0 -37.5em
+}
+
+.event-currency-flag_bm {
+    background-position: 0 -39em
+}
+
+.event-currency-flag_bn {
+    background-position: 0 -40.5em
+}
+
+.event-currency-flag_bo {
+    background-position: 0 -42em
+}
+
+.event-currency-flag_bq {
+    background-position: 0 -43.5em
+}
+
+.event-currency-flag_br {
+    background-position: 0 -45em
+}
+
+.event-currency-flag_bs {
+    background-position: 0 -46.5em
+}
+
+.event-currency-flag_bt {
+    background-position: 0 -48em
+}
+
+.event-currency-flag_bv {
+    background-position: 0 -49.5em
+}
+
+.event-currency-flag_bw {
+    background-position: 0 -51em
+}
+
+.event-currency-flag_by {
+    background-position: 0 -52.5em
+}
+
+.event-currency-flag_bz {
+    background-position: 0 -54em
+}
+
+.event-currency-flag_ca {
+    background-position: 0 -55.5em
+}
+
+.event-currency-flag_cc {
+    background-position: 0 -57em
+}
+
+.event-currency-flag_cd {
+    background-position: 0 -58.5em
+}
+
+.event-currency-flag_cf {
+    background-position: 0 -60em
+}
+
+.event-currency-flag_cg {
+    background-position: 0 -61.5em
+}
+
+.event-currency-flag_ch {
+    background-position: 0 -63em
+}
+
+.event-currency-flag_ci {
+    background-position: 0 -64.5em
+}
+
+.event-currency-flag_ck {
+    background-position: 0 -66em
+}
+
+.event-currency-flag_cl {
+    background-position: 0 -67.5em
+}
+
+.event-currency-flag_cm {
+    background-position: 0 -69em
+}
+
+.event-currency-flag_cn {
+    background-position: 0 -70.5em
+}
+
+.event-currency-flag_co {
+    background-position: 0 -72em
+}
+
+.event-currency-flag_cr {
+    background-position: 0 -73.5em
+}
+
+.event-currency-flag_cu {
+    background-position: 0 -75em
+}
+
+.event-currency-flag_cv {
+    background-position: 0 -76.5em
+}
+
+.event-currency-flag_cw {
+    background-position: 0 -78em
+}
+
+.event-currency-flag_cx {
+    background-position: 0 -79.5em
+}
+
+.event-currency-flag_cy {
+    background-position: 0 -81em
+}
+
+.event-currency-flag_cz {
+    background-position: 0 -82.5em
+}
+
+.event-currency-flag_de {
+    background-position: 0 -84em
+}
+
+.event-currency-flag_dj {
+    background-position: 0 -85.5em
+}
+
+.event-currency-flag_dk {
+    background-position: 0 -87em
+}
+
+.event-currency-flag_dm {
+    background-position: 0 -88.5em
+}
+
+.event-currency-flag_do {
+    background-position: 0 -90em
+}
+
+.event-currency-flag_dz {
+    background-position: 0 -91.5em
+}
+
+.event-currency-flag_ec {
+    background-position: 0 -93em
+}
+
+.event-currency-flag_ee {
+    background-position: 0 -94.5em
+}
+
+.event-currency-flag_eg {
+    background-position: 0 -96em
+}
+
+.event-currency-flag_eh {
+    background-position: 0 -97.5em
+}
+
+.event-currency-flag_er {
+    background-position: 0 -99em
+}
+
+.event-currency-flag_es-ct {
+    background-position: 0 -100.5em
+}
+
+.event-currency-flag_es {
+    background-position: 0 -102em
+}
+
+.event-currency-flag_et {
+    background-position: 0 -103.5em
+}
+
+.event-currency-flag_eu {
+    background-position: 0 -105em
+}
+
+.event-currency-flag_fi {
+    background-position: 0 -106.5em
+}
+
+.event-currency-flag_fj {
+    background-position: 0 -108em
+}
+
+.event-currency-flag_fk {
+    background-position: 0 -109.5em
+}
+
+.event-currency-flag_fm {
+    background-position: 0 -111em
+}
+
+.event-currency-flag_fo {
+    background-position: 0 -112.5em
+}
+
+.event-currency-flag_fr {
+    background-position: 0 -114em
+}
+
+.event-currency-flag_ga {
+    background-position: 0 -115.5em
+}
+
+.event-currency-flag_gb-eng {
+    background-position: 0 -117em
+}
+
+.event-currency-flag_gb-nir {
+    background-position: 0 -118.5em
+}
+
+.event-currency-flag_gb-sct {
+    background-position: 0 -120em
+}
+
+.event-currency-flag_gb-wls {
+    background-position: 0 -121.5em
+}
+
+.event-currency-flag_gb {
+    background-position: 0 -123em
+}
+
+.event-currency-flag_gd {
+    background-position: 0 -124.5em
+}
+
+.event-currency-flag_ge {
+    background-position: 0 -126em
+}
+
+.event-currency-flag_gf {
+    background-position: 0 -127.5em
+}
+
+.event-currency-flag_gg {
+    background-position: 0 -129em
+}
+
+.event-currency-flag_gh {
+    background-position: 0 -130.5em
+}
+
+.event-currency-flag_gi {
+    background-position: 0 -132em
+}
+
+.event-currency-flag_gl {
+    background-position: 0 -133.5em
+}
+
+.event-currency-flag_gm {
+    background-position: 0 -135em
+}
+
+.event-currency-flag_gn {
+    background-position: 0 -136.5em
+}
+
+.event-currency-flag_gp {
+    background-position: 0 -138em
+}
+
+.event-currency-flag_gq {
+    background-position: 0 -139.5em
+}
+
+.event-currency-flag_gr {
+    background-position: 0 -141em
+}
+
+.event-currency-flag_gs {
+    background-position: 0 -142.5em
+}
+
+.event-currency-flag_gt {
+    background-position: 0 -144em
+}
+
+.event-currency-flag_gu {
+    background-position: 0 -145.5em
+}
+
+.event-currency-flag_gw {
+    background-position: 0 -147em
+}
+
+.event-currency-flag_gy {
+    background-position: 0 -148.5em
+}
+
+.event-currency-flag_hk {
+    background-position: 0 -150em
+}
+
+.event-currency-flag_hm {
+    background-position: 0 -151.5em
+}
+
+.event-currency-flag_hn {
+    background-position: 0 -153em
+}
+
+.event-currency-flag_hr {
+    background-position: 0 -154.5em
+}
+
+.event-currency-flag_ht {
+    background-position: 0 -156em
+}
+
+.event-currency-flag_hu {
+    background-position: 0 -157.5em
+}
+
+.event-currency-flag_id {
+    background-position: 0 -159em
+}
+
+.event-currency-flag_ie {
+    background-position: 0 -160.5em
+}
+
+.event-currency-flag_il {
+    background-position: 0 -162em
+}
+
+.event-currency-flag_im {
+    background-position: 0 -163.5em
+}
+
+.event-currency-flag_in {
+    background-position: 0 -165em
+}
+
+.event-currency-flag_io {
+    background-position: 0 -166.5em
+}
+
+.event-currency-flag_iq {
+    background-position: 0 -168em
+}
+
+.event-currency-flag_ir {
+    background-position: 0 -169.5em
+}
+
+.event-currency-flag_is {
+    background-position: 0 -171em
+}
+
+.event-currency-flag_it {
+    background-position: 0 -172.5em
+}
+
+.event-currency-flag_je {
+    background-position: 0 -174em
+}
+
+.event-currency-flag_jm {
+    background-position: 0 -175.5em
+}
+
+.event-currency-flag_jo {
+    background-position: 0 -177em
+}
+
+.event-currency-flag_jp {
+    background-position: 0 -178.5em
+}
+
+.event-currency-flag_ke {
+    background-position: 0 -180em
+}
+
+.event-currency-flag_kg {
+    background-position: 0 -181.5em
+}
+
+.event-currency-flag_kh {
+    background-position: 0 -183em
+}
+
+.event-currency-flag_ki {
+    background-position: 0 -184.5em
+}
+
+.event-currency-flag_km {
+    background-position: 0 -186em
+}
+
+.event-currency-flag_kn {
+    background-position: 0 -187.5em
+}
+
+.event-currency-flag_kp {
+    background-position: 0 -189em
+}
+
+.event-currency-flag_kr {
+    background-position: 0 -190.5em
+}
+
+.event-currency-flag_kw {
+    background-position: 0 -192em
+}
+
+.event-currency-flag_ky {
+    background-position: 0 -193.5em
+}
+
+.event-currency-flag_kz {
+    background-position: 0 -195em
+}
+
+.event-currency-flag_la {
+    background-position: 0 -196.5em
+}
+
+.event-currency-flag_lb {
+    background-position: 0 -198em
+}
+
+.event-currency-flag_lc {
+    background-position: 0 -199.5em
+}
+
+.event-currency-flag_li {
+    background-position: 0 -201em
+}
+
+.event-currency-flag_lk {
+    background-position: 0 -202.5em
+}
+
+.event-currency-flag_lr {
+    background-position: 0 -204em
+}
+
+.event-currency-flag_ls {
+    background-position: 0 -205.5em
+}
+
+.event-currency-flag_lt {
+    background-position: 0 -207em
+}
+
+.event-currency-flag_lu {
+    background-position: 0 -208.5em
+}
+
+.event-currency-flag_lv {
+    background-position: 0 -210em
+}
+
+.event-currency-flag_ly {
+    background-position: 0 -211.5em
+}
+
+.event-currency-flag_ma {
+    background-position: 0 -213em
+}
+
+.event-currency-flag_mc {
+    background-position: 0 -214.5em
+}
+
+.event-currency-flag_md {
+    background-position: 0 -216em
+}
+
+.event-currency-flag_me {
+    background-position: 0 -217.5em
+}
+
+.event-currency-flag_mf {
+    background-position: 0 -219em
+}
+
+.event-currency-flag_mg {
+    background-position: 0 -220.5em
+}
+
+.event-currency-flag_mh {
+    background-position: 0 -222em
+}
+
+.event-currency-flag_mk {
+    background-position: 0 -223.5em
+}
+
+.event-currency-flag_ml {
+    background-position: 0 -225em
+}
+
+.event-currency-flag_mm {
+    background-position: 0 -226.5em
+}
+
+.event-currency-flag_mn {
+    background-position: 0 -228em
+}
+
+.event-currency-flag_mo {
+    background-position: 0 -229.5em
+}
+
+.event-currency-flag_mp {
+    background-position: 0 -231em
+}
+
+.event-currency-flag_mq {
+    background-position: 0 -232.5em
+}
+
+.event-currency-flag_mr {
+    background-position: 0 -234em
+}
+
+.event-currency-flag_ms {
+    background-position: 0 -235.5em
+}
+
+.event-currency-flag_mt {
+    background-position: 0 -237em
+}
+
+.event-currency-flag_mu {
+    background-position: 0 -238.5em
+}
+
+.event-currency-flag_mv {
+    background-position: 0 -240em
+}
+
+.event-currency-flag_mw {
+    background-position: 0 -241.5em
+}
+
+.event-currency-flag_mx {
+    background-position: 0 -243em
+}
+
+.event-currency-flag_my {
+    background-position: 0 -244.5em
+}
+
+.event-currency-flag_mz {
+    background-position: 0 -246em
+}
+
+.event-currency-flag_na {
+    background-position: 0 -247.5em
+}
+
+.event-currency-flag_nc {
+    background-position: 0 -249em
+}
+
+.event-currency-flag_ne {
+    background-position: 0 -250.5em
+}
+
+.event-currency-flag_nf {
+    background-position: 0 -252em
+}
+
+.event-currency-flag_ng {
+    background-position: 0 -253.5em
+}
+
+.event-currency-flag_ni {
+    background-position: 0 -255em
+}
+
+.event-currency-flag_nl {
+    background-position: 0 -256.5em
+}
+
+.event-currency-flag_no {
+    background-position: 0 -258em
+}
+
+.event-currency-flag_np {
+    background-position: 0 -259.5em
+}
+
+.event-currency-flag_nr {
+    background-position: 0 -261em
+}
+
+.event-currency-flag_nu {
+    background-position: 0 -262.5em
+}
+
+.event-currency-flag_nz {
+    background-position: 0 -264em
+}
+
+.event-currency-flag_om {
+    background-position: 0 -265.5em
+}
+
+.event-currency-flag_pa {
+    background-position: 0 -267em
+}
+
+.event-currency-flag_pe {
+    background-position: 0 -268.5em
+}
+
+.event-currency-flag_pf {
+    background-position: 0 -270em
+}
+
+.event-currency-flag_pg {
+    background-position: 0 -271.5em
+}
+
+.event-currency-flag_ph {
+    background-position: 0 -273em
+}
+
+.event-currency-flag_pk {
+    background-position: 0 -274.5em
+}
+
+.event-currency-flag_pl {
+    background-position: 0 -276em
+}
+
+.event-currency-flag_pm {
+    background-position: 0 -277.5em
+}
+
+.event-currency-flag_pn {
+    background-position: 0 -279em
+}
+
+.event-currency-flag_pr {
+    background-position: 0 -280.5em
+}
+
+.event-currency-flag_ps {
+    background-position: 0 -282em
+}
+
+.event-currency-flag_pt {
+    background-position: 0 -283.5em
+}
+
+.event-currency-flag_pw {
+    background-position: 0 -285em
+}
+
+.event-currency-flag_py {
+    background-position: 0 -286.5em
+}
+
+.event-currency-flag_qa {
+    background-position: 0 -288em
+}
+
+.event-currency-flag_re {
+    background-position: 0 -289.5em
+}
+
+.event-currency-flag_ro {
+    background-position: 0 -291em
+}
+
+.event-currency-flag_rs {
+    background-position: 0 -292.5em
+}
+
+.event-currency-flag_ru {
+    background-position: 0 -294em
+}
+
+.event-currency-flag_rw {
+    background-position: 0 -295.5em
+}
+
+.event-currency-flag_sa {
+    background-position: 0 -297em
+}
+
+.event-currency-flag_sb {
+    background-position: 0 -298.5em
+}
+
+.event-currency-flag_sc {
+    background-position: 0 -300em
+}
+
+.event-currency-flag_sd {
+    background-position: 0 -301.5em
+}
+
+.event-currency-flag_se {
+    background-position: 0 -303em
+}
+
+.event-currency-flag_sg {
+    background-position: 0 -304.5em
+}
+
+.event-currency-flag_sh {
+    background-position: 0 -306em
+}
+
+.event-currency-flag_si {
+    background-position: 0 -307.5em
+}
+
+.event-currency-flag_sj {
+    background-position: 0 -309em
+}
+
+.event-currency-flag_sk {
+    background-position: 0 -310.5em
+}
+
+.event-currency-flag_sl {
+    background-position: 0 -312em
+}
+
+.event-currency-flag_sm {
+    background-position: 0 -313.5em
+}
+
+.event-currency-flag_sn {
+    background-position: 0 -315em
+}
+
+.event-currency-flag_so {
+    background-position: 0 -316.5em
+}
+
+.event-currency-flag_sr {
+    background-position: 0 -318em
+}
+
+.event-currency-flag_ss {
+    background-position: 0 -319.5em
+}
+
+.event-currency-flag_st {
+    background-position: 0 -321em
+}
+
+.event-currency-flag_sv {
+    background-position: 0 -322.5em
+}
+
+.event-currency-flag_sx {
+    background-position: 0 -324em
+}
+
+.event-currency-flag_sy {
+    background-position: 0 -325.5em
+}
+
+.event-currency-flag_sz {
+    background-position: 0 -327em
+}
+
+.event-currency-flag_tc {
+    background-position: 0 -328.5em
+}
+
+.event-currency-flag_td {
+    background-position: 0 -330em
+}
+
+.event-currency-flag_tf {
+    background-position: 0 -331.5em
+}
+
+.event-currency-flag_tg {
+    background-position: 0 -333em
+}
+
+.event-currency-flag_th {
+    background-position: 0 -334.5em
+}
+
+.event-currency-flag_tj {
+    background-position: 0 -336em
+}
+
+.event-currency-flag_tk {
+    background-position: 0 -337.5em
+}
+
+.event-currency-flag_tl {
+    background-position: 0 -339em
+}
+
+.event-currency-flag_tm {
+    background-position: 0 -340.5em
+}
+
+.event-currency-flag_tn {
+    background-position: 0 -342em
+}
+
+.event-currency-flag_to {
+    background-position: 0 -343.5em
+}
+
+.event-currency-flag_tr {
+    background-position: 0 -345em
+}
+
+.event-currency-flag_tt {
+    background-position: 0 -346.5em
+}
+
+.event-currency-flag_tv {
+    background-position: 0 -348em
+}
+
+.event-currency-flag_tw {
+    background-position: 0 -349.5em
+}
+
+.event-currency-flag_tz {
+    background-position: 0 -351em
+}
+
+.event-currency-flag_ua {
+    background-position: 0 -352.5em
+}
+
+.event-currency-flag_ug {
+    background-position: 0 -354em
+}
+
+.event-currency-flag_um {
+    background-position: 0 -355.5em
+}
+
+.event-currency-flag_un {
+    background-position: 0 -357em
+}
+
+.event-currency-flag_us {
+    background-position: 0 -358.5em
+}
+
+.event-currency-flag_uy {
+    background-position: 0 -360em
+}
+
+.event-currency-flag_uz {
+    background-position: 0 -361.5em
+}
+
+.event-currency-flag_va {
+    background-position: 0 -363em
+}
+
+.event-currency-flag_vc {
+    background-position: 0 -364.5em
+}
+
+.event-currency-flag_ve {
+    background-position: 0 -366em
+}
+
+.event-currency-flag_vg {
+    background-position: 0 -367.5em
+}
+
+.event-currency-flag_vi {
+    background-position: 0 -369em
+}
+
+.event-currency-flag_vn {
+    background-position: 0 -370.5em
+}
+
+.event-currency-flag_vu {
+    background-position: 0 -372em
+}
+
+.event-currency-flag_wf {
+    background-position: 0 -373.5em
+}
+
+.event-currency-flag_ws {
+    background-position: 0 -375em
+}
+
+.event-currency-flag_ye {
+    background-position: 0 -376.5em
+}
+
+.event-currency-flag_yt {
+    background-position: 0 -378em
+}
+
+.event-currency-flag_za {
+    background-position: 0 -379.5em
+}
+
+.event-currency-flag_zm {
+    background-position: 0 -381em
+}
+
+.event-currency-flag_zw {
+    background-position: 0 -382.5em
+}
+
+.event-country {
+    white-space: nowrap;
+    line-height: 1
+}
+
+.e-value-0,
+.e-value-1,
+.e-value-2,
+.e-value-3 {
+    display: inline-block;
+    vertical-align: middle;
+    margin: auto;
+    width: 1.6rem;
+    height: 1.4rem;
+    background-image: url('/images/risk_level.svg');
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    background-size: 200%
+}
+
+.e-value-0 {
+    background-position: 0 0
+}
+
+.e-value-1 {
+    background-position: 100% 100%
+}
+
+.e-value-2 {
+    background-position: 0 100%
+}
+
+.e-value-3 {
+    background-position: 100% 0
+}
+
+.events-header:before,
+.events-header:after {
+    content: " ";
+    display: table
+}
+
+.events-header:after {
+    clear: both
+}
+
+.events-header:before,
+.events-header:after {
+    content: " ";
+    display: table
+}
+
+.events-header:after {
+    clear: both
+}
+
+.events-header:before,
+.events-header:after {
+    content: " ";
+    display: table
+}
+
+.events-header:after {
+    clear: both
+}
+
+.events-header:before,
+.events-header:after {
+    content: " ";
+    display: table
+}
+
+.events-header:after {
+    clear: both
+}
+table th, .table.events th {
+    font-size: 1.2rem;
+    box-sizing: border-box;
+    padding: 8px;
+    line-height: 1.42857143;
+}
+table th, .table.events th {
+    vertical-align: middle;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #1359a0;
+}
+
+#calendar-scrolled{
+    overflow-x: hidden;
+    height: 360px;
+}
+.tablescroll{
+    overflow: hidden; 
+    height: 395px; 
+    position: relative;
+    border: 1px solid #dadde0;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+/*#calendar-scrolled{
+    overflow-x: hidden; 
+    height: 395px; 
+    position: relative;
+    border: 1px solid #dadde0;
+    box-sizing: border-box;
+    border-radius: 3px;
+}*/
+#calendar-scrolled .table.events .events-dateline
+{
+    padding-left: 7px;
+}
+#calendar-scrolled::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+#calendar-scrolled::-webkit-scrollbar-thumb
+{
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+    cursor: pointer;
 }
